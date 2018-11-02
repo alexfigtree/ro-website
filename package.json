@@ -1,0 +1,25 @@
+{
+  "name": "ro-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Ro Network",
+  "homepage": "http://ro.network",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexfigtree/ro-website.js.git"
+  },
+  "keywords": [
+    "social",
+    "network",
+    "identity",
+    "contacts"
+  ],
+  "author": "Alex Higuera",
+  "license": "MIT",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  }
+}
