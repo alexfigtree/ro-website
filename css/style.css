@@ -45,7 +45,8 @@ canvas{
 
 .inner-container{
   top:40%;
-  left: 40.5%;
+  display: inline-block;
+  width: 100%;
   text-align: center;
   position: absolute;
   color: lightgrey;
@@ -73,10 +74,4 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-
-@media(max-width: 600px) {
-  .inner-container{
-    left: 20.5%;
-  }
 }
