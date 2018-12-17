@@ -74,3 +74,9 @@ canvas{
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+@media(max-width: 600px) {
+  .inner-container{
+    left: 20.5%;
+  }
+}
