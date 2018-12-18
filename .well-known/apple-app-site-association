@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "E7DD5BJJ4X.org.reactjs.native.example.RoApp3",
+        "paths": [ "*" ]
+      },
+      {
+        "appID": "JHL7BZ6C39.org.reactjs.native.example.RoApp1",
+        "paths": [ "*" ]
+      }
+    ]
+  }
+}
