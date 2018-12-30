@@ -34,35 +34,22 @@ function myFunction() {
   }
 }
 
-function responsiveNav() {
-  var x = document.getElementById("navbar");
-  if (x.className === "gmd") {
-    x.className += " responsive";
-  } else {
-    x.className = "gmd";
-  }
-}
 </script>
 </head>
 <body>
 
-<script>
-
-</script>
-
-
 <div id="navbar" class="gmd">
-  
-    <!--<img src="RoIcon.png"/>--><a class="navbar-logo href="index.html">RO</a>
-
-    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="mailto:contact@ro.network?Subject=Ro%20Network" target="_top">CONTACT</a>
-    <a href="index.html#faq">FAQ</a>
-    <a href="index.html#about">ABOUT</a>
-    <a class="active" href="index.html">HOME</a>
-
+  <header class="header">  
+      <!--<img src="RoIcon.png"/>--><a class="navbar-logo href="index.html">RO</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><i class="fa fa-bars"></i></label>
+    <ul class="menu">
+      <li><a class="active" href="index.html">HOME</a></li>
+      <li><a href="index.html#about">ABOUT</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="mailto:contact@ro.network?Subject=Ro%20Network" target="_top">CONTACT</a></li>
+    </ul>
+  </header>
 </div>
 
 <div class="bgimg-1">
