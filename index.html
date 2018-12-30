@@ -1,28 +1,142 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<!--
+
+  ___    ___   
+ | _ \  / _ \  
+ |   / | (_) | 
+ |_|_\  \___/  
+               
+                                                                        -->
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Ro Network</title>
-  <meta name="description" content="Ro App website">
-  <meta name="author" content="Alex Higuera" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+  // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function responsiveNav() {
+  var x = document.getElementById("navbar");
+  if (x.className === "gmd") {
+    x.className += " responsive";
+  } else {
+    x.className = "gmd";
+  }
+}
+</script>
 </head>
 <body>
 
-<!-- particles.js container -->
-<div id="particles-js">
-  <div class="inner-container">
-    <div class="title">Ro</div>
-    <div class="sub-header">(<span class="salmon">(</span>Fall/Winter 2018-2019<span class="salmon">)</span>)</div>
+<script>
+
+</script>
+
+
+<div id="navbar" class="gmd">
+  
+    <!--<img src="RoIcon.png"/>--><a class="navbar-logo href="index.html">RO</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="mailto:contact@ro.network?Subject=Ro%20Network" target="_top">CONTACT</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#about">ABOUT</a>
+    <a class="active" href="index.html">HOME</a>
+
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">RO</span>
+  </div>
+</div>
+
+<section id="homes">
+  <div style="color: #777;background-color:rgb(240,241,243);text-align:center;padding:50px 80px;text-align: justify; height: 800px;">
+    <h3 style="text-align:center; margin-bottom: 60px; font-size: 30px; letter-spacing: 2px;">Share your contact info easily with Ro:</h3>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <img class="app-img card card-5" src="edit.png"/>
+          <div class="sub-header">Quickly build your personalized QR code
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="app-img card card-5" src="home.png"/>
+          <div class="sub-header">Your QR code gets saved and is ready to share</div>
+        </div>
+        <div class="col-md-4">
+          <img class="app-img card card-5" src="scan.png"/>
+          <div class="sub-header">Have your QR scanned or scan others</div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+    </div>
+  </div>
+</section>
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:rgb(34,40,57);text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<section id="faq">
+  <div class="bgimg-3">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+    </div>
+  </div>
+</section>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:rgb(34,40,57);text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">COOL!</span>
   </div>
 
 </div>
 
-<!-- scripts -->
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
 
 
+  <footer class="footer">
+    <p>Copyright @2018 Ro Network</p>
+    <p>Contact information: <a href="mailto:someone@example.com">
+    someone@example.com</a>.</p>
+  </footer>
 </body>
 </html>
