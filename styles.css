@@ -68,14 +68,6 @@ body, html {
   color: #000;
 }
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -306,6 +298,46 @@ i.fa.fa-bars {
   margin-right: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+/*faq section*/
+.faq-window {
+  display: block;
+  width: 96%;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 25px;
+  color: lightgrey;
+  padding: 30px;
+  letter-spacing: 2px;
+  position: inherit !important;
+  padding-top: 50px;
+}
+.faq-salmon {
+  color: rgb(231,160,119);
+}
+.faq-header {
+ color: rgb(231,160,119);
+ font-size: 30px;
+ padding-top: 40px;
+}
+.faq-qa {
+  font-size: 16px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.faq-spacer {
+  margin: 40px;
+}
+
+/*button/badges*/
+.badge {
+  max-height: 85px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.apple-badge {
+  padding: 13px;
+  height: 58px;
 }
 
 /*footer*/
