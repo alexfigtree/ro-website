@@ -44,7 +44,7 @@ canvas{
 }
 
 .inner-container{
-  top:40%;
+  top:27%;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -74,4 +74,21 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+/*button/badges*/
+.button-container{
+  color:#ddd;
+  text-align:center;
+  padding:50px 80px;
+  font-size: 25px;
+}
+
+.badge {
+  text-align: center;
+  max-height: 85px;
+}
+.apple-badge {
+  padding: 13px;
+  height: 58px;
 }
