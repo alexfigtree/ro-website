@@ -120,9 +120,6 @@ h3 {
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  /*background-color: rgba(22,28,46,0.9);*/
-  /*background-color: rgb(11,30,56,0.95);*/
-  /*background-color: black;*/)
   background-color: rgba(0,0,0,0.2);
   z-index: 1;
   position: fixed;
@@ -239,7 +236,7 @@ rgb(17,33,54)
 }
 
 i.fa.fa-bars {
-  color: rgb(231,160,119);
+  color: #e65425;
   font-size: 22px;
 }
 
@@ -526,8 +523,58 @@ div.col-md-4.footer-background {
   margin-bottom: 15px;
 }
 @media (max-width: 992px) {
+  #ro {
+    padding-top: 20px;
+  }
+  .ro-title {
+    font-size: 64px;
+  }
+  #navbar a.navbar-logo{
+    color: white;
+    margin-left: 20px;
+  }
+  .bgimg-1 {
+    background-attachment: inherit;
+  }
+  #navbar {
+    background-color: rgba(0,0,0,0.95);
+  }
+  #navbar a{
+    color: white;
+  }
+  .header .menu-btn:checked ~ .menu {
+    max-height: 300px;
+    margin-left: 8%;
+  }
+  #navbar a.learn-more {
+    display: block;
+    height: 25px;
+    color: #e65425;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    border-color: #e65425;
+    margin-left: 20%;
+  }
+  #navbar a.learn-more:focus {
+    color: white;
+  }
+
   .footer-image{
     margin-top:10px; 
     margin-bottom: 10px;
+  }
+  .faq-window {
+    padding: 0px;
+  }
+  .faq-answer {
+    color: black;
+    font-size: 16px;
+    margin-left: 2%;
+    margin-right: 2%;
+    letter-spacing: 1.5px;
+  }
+  div.footer-row {
+    background-color: black;
   }
 }
