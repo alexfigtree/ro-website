@@ -43,13 +43,14 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("splash.jpeg");
+  background-image: url("ro_red_orange_white.png");
+  min-width: 100%;
   min-height: 100%;
   opacity: 0.95;
 }
 
 .bgimg-2 {
-  background-image: url("network_navy.png");
+  background-image: url("ro_red_orange.png");
   opacity: 0.85;
   min-height: 400px;
 }
@@ -57,6 +58,16 @@ body, html {
 .bgimg-3 {
   background-image: url("network.png");
   min-height: 400px;
+}
+
+.ro-title{
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  padding-top: 15%;
+  font-size: 190px;
 }
 
 .caption {
@@ -95,7 +106,9 @@ h3 {
 #navbar {
   overflow: hidden;
   /*background-color: rgba(22,28,46,0.9);*/
-  background-color: rgb(11,30,56,0.95);
+  /*background-color: rgb(11,30,56,0.95);*/
+  /*background-color: black;*/)
+  background-color: rgba(0,0,0,0.2);
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -107,7 +120,8 @@ h3 {
 /* Navbar links */
 #navbar a {
   display: block;
-  color: rgb(240,241,243);
+  /*color: rgb(240,241,243);*/
+  color: black;
   /*color: lightgrey;*/
   text-align: center;
   padding: 14px;
@@ -132,6 +146,7 @@ rgb(17,33,54)
 #navbar .navbar-logo {
   float: left;
   margin-left: 50px;
+  font-weight: 700;
 }
 #navbar .navbar-logo img {
   margin-left: 30px;
@@ -141,8 +156,13 @@ rgb(17,33,54)
   margin-right: 20px;
 }
 
+#navbar a.navbar-logo:hover{
+  color: white;
+}
+
 #navbar a:hover {
-  color: rgb(231,160,119);
+  /*color: rgb(231,160,119);*/
+  color: #e65425;
 }
 
 /* Responsive navbar styling */
@@ -220,6 +240,24 @@ i.fa.fa-bars {
 }
 
 
+/* HOW section */
+.how {
+  color: #777;
+  /* text-align:center;*/
+  padding:50px 80px;
+  /* text-align: justify; */
+  height: 525px;
+  border-top: solid black 5px;
+}
+
+.how-header {
+  text-align:center; 
+  margin-top: 40px;
+  margin-bottom: 75px; 
+  font-size: 30px; 
+  letter-spacing: 2px;
+  color: black;
+}
 
 /* Page content */
 .content {
@@ -242,22 +280,38 @@ i.fa.fa-bars {
 /*bootstrap*/
 .row {
   margin-bottom: 20px;
+  height: 300px;
 }
 .row .row {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
 [class*="col-"] {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
+  /*background-color: #eee;*/
+  /*background-color: rgba(86,61,124,.15);
   border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
+  border: 1px solid rgba(86,61,124,.2);*/
 }
 .row:before {
   display: table;
   content: " ";
+}
+
+.col-md-2 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.col-md-3 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .col-md-4 {
@@ -268,6 +322,14 @@ i.fa.fa-bars {
 }
 
 @media (min-width: 992px) {
+  .col-md-2 {
+      width: 45%;
+      float: left;
+  }
+  .col-md-3 {
+      width: 24%;
+      float: left;
+  }
   .col-md-4 {
       width: 30%;
       float: left;
@@ -276,12 +338,13 @@ i.fa.fa-bars {
 
 /* Section - App */
 .app-img {
-  width: 75%;
-  margin-left: 13%;
+  width: 50%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 .card {
   background: #fff;
-  border-radius: 25px;
+  border-radius: 5px;
   display: inline-block;
   position: relative;
 }
@@ -289,14 +352,21 @@ i.fa.fa-bars {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+.edit-icon {
+  max-width: 155px;
+  margin-top: 26px;
+  margin-left: 41%;
+  margin-bottom: 24px;
+}
+
 .sub-header {
   margin-top: 30px;
   font-size: 20px;
+  font-family: Helvetica;
+  letter-spacing: 2px;
   color: rgba(22,28,46,0.9);
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-weight: bold;
+  margin-left: 18%;
   margin-bottom: 20px;
 }
 
