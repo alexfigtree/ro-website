@@ -43,10 +43,11 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("ro_red_orange_white.png");
+  background-image: url("ro_red_orange_white_5.png");
   min-width: 100%;
   min-height: 100%;
   opacity: 0.95;
+  height: 750px;
 }
 
 .bgimg-2 {
@@ -120,7 +121,7 @@ h3 {
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: none;
+  background-color: white;
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -187,7 +188,7 @@ rgb(17,33,54)
 }
 
 #navbar a.navbar-logo:hover{
-  color: white;
+  color: #e65425;
 }
 
 #navbar a:hover {
@@ -476,14 +477,14 @@ a.learn-more:hover{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: black;
+  background-color: white;
   color: #e65425;
   text-align: center;
 }
 .footer-sub-header a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: black;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -511,11 +512,11 @@ a.learn-more:hover{
     font-size: 0;
 }
 div.footer-row{
-  background-color: rgb(11,30,56);
+  border-top: solid black 5px;
 }
 div.col-md-4.footer-background {
-  background-color: black;
-  border-color: black;
+  background-color: white;
+  border-color: white;
 }
 .footer-image{
   width: 20%; 
@@ -524,7 +525,7 @@ div.col-md-4.footer-background {
 }
 @media (max-width: 992px) {
   #ro {
-    padding-top: 20px;
+    padding-top: 100px;
   }
   .ro-title {
     font-size: 64px;
@@ -535,6 +536,8 @@ div.col-md-4.footer-background {
   }
   .bgimg-1 {
     background-attachment: inherit;
+    background-image: url("ro_red_orange_white_2.png");
+    height: 400px;
   }
   #navbar {
     background-color: rgba(0,0,0,0.95);
@@ -605,8 +608,5 @@ div.col-md-4.footer-background {
     margin-left: 2%;
     margin-right: 2%;
     letter-spacing: 1.5px;
-  }
-  div.footer-row {
-    background-color: black;
   }
 }
