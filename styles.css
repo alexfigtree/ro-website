@@ -425,6 +425,12 @@ a.learn-more:hover{
   font-weight: 500;
   font-size: 20px;
 }
+
+/*build page*/
+#build-header{
+
+}
+
 /*faq section*/
 .faq-window {
   display: block;
@@ -473,7 +479,7 @@ a.learn-more:hover{
 .footer {
   height: 200px;
   margin-top: -15px;
-  padding-top: 30px;
+  padding-top: 15px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -523,6 +529,21 @@ div.col-md-4.footer-background {
   margin-top:-15px; 
   margin-bottom: 15px;
 }
+.social-media-row {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.social-media {
+  margin: 3%;
+}
+.social-media-icon {
+  max-width: 30px;
+}
+.social-media-icon a:hover {
+  text-decoration: underline;
+  color: #e65425;
+}
+
 @media (max-width: 992px) {
   #ro {
     padding-top: 100px;
