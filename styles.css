@@ -525,6 +525,7 @@ div.col-md-4.footer-background {
   border-color: white;
 }
 .footer-image{
+  border-radius: 50px;
   width: 20%; 
   margin-top:-15px; 
   margin-bottom: 15px;
@@ -591,7 +592,7 @@ div.col-md-4.footer-background {
   }
   .how-header {
     font-size: 32px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0px;
   }
   .app-img {
@@ -614,7 +615,7 @@ div.col-md-4.footer-background {
     padding: 15px;
   }
   .get-app-subheader {
-    margin-top: -20px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
   .footer-image{
@@ -623,7 +624,8 @@ div.col-md-4.footer-background {
   }
   .faq-window {
     padding: 0px;
-    width: 100%;
+    width: 140%;
+    margin-left: -20%;
   }
   .faq-answer {
     color: black;
