@@ -141,7 +141,7 @@ h3 {
   font-size: 22px;
   /*font-family: "Montserrat", sans-serif;*/
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 35px;
   font-weight: 500;
 }
 
@@ -352,6 +352,13 @@ i.fa.fa-bars {
   padding-left: 15px;
 }
 
+.col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 @media (min-width: 992px) {
   .col-md-2 {
       width: 45%;
@@ -363,6 +370,10 @@ i.fa.fa-bars {
   }
   .col-md-4 {
       width: 30%;
+      float: left;
+  }
+  .col-md-6 {
+      width: 45%;
       float: left;
   }
 }
@@ -431,6 +442,39 @@ a.learn-more:hover{
 
 }
 
+/* Section - About */
+.profile-photo {
+  max-width: 150px;
+  border-radius: 100px;
+}
+
+.photo-sub-header {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Helvetica;
+  letter-spacing: 2px;
+  color: rgba(22,28,46,0.9);
+  text-align: center;
+}
+
+.about-text {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: black;
+  line-height: 25px;
+}
+
+.about-social-media {
+  margin: 1%;
+}
+.about-social-media-icon {
+  max-width: 25px;
+}
+.about-social-media-icon a:hover {
+  text-decoration: underline;
+  color: #e65425;
+}
+
 /*faq section*/
 .faq-window {
   display: block;
@@ -455,8 +499,8 @@ a.learn-more:hover{
 .faq-answer {
   color: black;
   font-size: 16px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
   letter-spacing: 1.5px;
 }
 
@@ -520,7 +564,7 @@ a.learn-more:hover{
 div.footer-row{
   border-top: solid black 5px;
 }
-div.col-md-4.footer-background {
+div.col-md-4.footer-background, div.col-md-6.footer-background {
   background-color: white;
   border-color: white;
 }
@@ -570,7 +614,7 @@ div.col-md-4.footer-background {
     color: white;
   }
   .header .menu-btn:checked ~ .menu {
-    max-height: 300px;
+    max-height: 360px;
     margin-left: 8%;
   }
   #navbar a.learn-more {
@@ -633,5 +677,15 @@ div.col-md-4.footer-background {
     margin-left: 2%;
     margin-right: 2%;
     letter-spacing: 1.5px;
+  }
+  /*About*/
+  .col-md-6 {
+    width: 90%;
+    float: left;
+  }
+  .about-text {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 14px !important;
   }
 }

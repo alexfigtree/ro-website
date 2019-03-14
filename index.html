@@ -14,6 +14,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="roicon_peg_icon.ico" type="image/x-icon">
+<link rel="icon" href="roicon_peg_icon.ico" type="image/x-icon">  
 
 <script>
   // When the user scrolls the page, execute myFunction 
@@ -46,7 +48,7 @@ function myFunction() {
     <ul class="menu">
       <li><a class="active" href="index.html">HOME</a></li>
       <li><a href="index.html#connect">CONNECT</a></li>
-      <!--<li><a href="index.html#about">ABOUT</a></li>-->
+      <li><a href="index.html#about">ABOUT</a></li>
       <li><a href="index.html#faq">FAQ</a></li>
       <li><a href="mailto:contact@ro.network?Subject=Ro%20Network" target="_blank">CONTACT</a></li>
       <li><a class="learn-more" href="index.html#download" target="_blank">DOWNLOAD</a></li>
@@ -107,6 +109,58 @@ function myFunction() {
   </div>
 </section>
 
+<section id="about">
+  <div style="position:relative;">
+    <div style="color:white;background-color:'#e65425';text-align:center;padding:50px 80px;text-align: center;">
+
+        <div class="caption faq-window">
+          <p class="faq-header">ABOUT RO</p>
+
+            <!--6-->
+            <div class="row">
+              <div class="col-md-6">
+                <img class="profile-photo" src="/images/alex.jpg"/>
+                <div class="photo-sub-header">Alex Higuera</div>
+                <div class="photo-sub-header">Co-Founder</div>
+                <div class="social-media-row">
+                  <span class="about-social-media">
+                    <a href="https://github.com/alexfigtree/" target="_blank"><img class="about-social-media-icon" src="/images/github.png"/></a>
+                  </span>
+                  <span class="about-social-media">
+                    <a href="https://www.linkedin.com/in/alexhiguera/" target="_blank"><img class="about-social-media-icon" src="/images/linkedin.png"/></a>
+                  </span>
+                  <span class="about-social-media">
+                    <a href="https://twitter.com/_alex_higuera_" target="_blank"><img class="about-social-media-icon" src="/images/twitter.png"/></a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img class="profile-photo" src="/images/dima.jpg"/>
+                <div class="photo-sub-header">Dmitri Zagidulin</div>
+                <div class="photo-sub-header">Co-Founder</div>
+                <div class="social-media-row">
+                  <span class="about-social-media">
+                    <a href="https://github.com/dmitrizagidulin" target="_blank"><img class="about-social-media-icon" src="/images/github.png"/></a>
+                  </span>
+                  <span class="about-social-media">
+                    <a href="https://www.linkedin.com/in/dzagidulin/" target="_blank"><img class="about-social-media-icon" src="/images/linkedin.png"/></a>
+                  </span>
+                  <span class="about-social-media">
+                    <a href="https://twitter.com/codenamedmitri" target="_blank"><img class="about-social-media-icon" src="/images/twitter.png"/></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-text">
+              Alex and Dmitri met in 2017 while working at the Human Dynamics lab at MIT in 2017 on a decentralization project aimed at privacy-preserving data sharing.  Both have since worked in decentralized projects since, Alex as a software architect working with the Ethereum blockchain and Dmitri as a decentralized systems engineer at MIT and various startups.  Both share a frustration with how people connect, and how inefficient business cards as we currently use them are.
+            </div>
+        
+        </div>
+
+    </div>
+  </div>
+</section>
 
 <section id="faq">
   <div style="position:relative;">
@@ -115,18 +169,35 @@ function myFunction() {
         <div class="caption faq-window">
           <p class="faq-header">FAQ - Frequently Asked Questions</p>
           <p class="faq-spacer"></p>
+          
+          <p class="faq-subheader">Q. What is Ro?</p>
+          <p class="faq-answer">A. Ro is a mobile app that lets your quickly share your personal contact information with others.  Once you connect with someone on Ro, you'll never lose touch, with features that will auto-update information
+          <p class="faq-spacer"></p>
+          
           <p class="faq-subheader">Q. How do I download the app?</p>
           <p class="faq-answer">A. You can download the app by scanning someone's Ro App QR code, or by going through this link: http://onelink.to/n3ts2c.
           <p class="faq-spacer"></p>
+          
+          <p class="faq-subheader">Q. How do I get started using Ro?</p>
+          <p class="faq-answer">A. Once you download Ro, you can edit your profile to generate your first personalized QR code with your info. You can then have it scanned by others (even if they don't have Ro installed) to share your contact info.
+          <p class="faq-spacer"></p>
+          
           <p class="faq-subheader">Q. How do I generate a personalized QR code?</p>
           <p class="faq-answer">A. On your edit page, you can import information or manually put in information for desired fields.  Only a first name is required.
           <p class="faq-spacer"></p>
+
+          <p class="faq-subheader">Q. Why does my QR code change every time I edit my profile?</p>
+          <p class="faq-answer">A. Ro takes the data you put in your edit screen to generate QR codes.  Everytime you change the slightest thing on your profile, it will alter your QR code.
+          <p class="faq-spacer"></p>
+          
           <p class="faq-subheader">Q. Can I connect without a WiFi connection?</p>
           <p class="faq-answer">A. You can update your personalized QR Code without a WiFi connection. However, you will need network connectivity to connect to others.
           <p class="faq-spacer"></p>
+          
           <p class="faq-subheader">Q. What happens to the data in my QR code?</p>
-          <p class="faq-answer">A. The data you choose to put on your QR code gets placed in your new connection's native contacts list.
+          <p class="faq-answer">A. The data you choose to put on your QR code gets placed in your new connection's native contacts list. Information about where and when you met is saved to Ro. You are always in control of the data used to generate your custom QR code.
           <p class="faq-spacer"></p>
+
         </div>
 
     </div>
