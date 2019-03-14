@@ -372,9 +372,16 @@ i.fa.fa-bars {
       width: 30%;
       float: left;
   }
+  /*For About section*/
   .col-md-6 {
-      width: 45%;
-      float: left;
+    width: 36%;
+    float: left;
+  }
+  .profile-left {
+    padding-left: 12%;
+  }
+  .profile-right {
+    padding-right: 12%;
   }
 }
 
@@ -680,12 +687,20 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
   }
   /*About*/
   .col-md-6 {
-    width: 90%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
     float: left;
   }
   .about-text {
     padding-left: 2%;
     padding-right: 2%;
     font-size: 14px !important;
+  }
+  .profile-left {
+    padding-left: 0%;
+  }
+  .profile-right {
+    padding-right: 0%;
   }
 }
