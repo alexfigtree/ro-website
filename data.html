@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<!--
+
+  ___    ___   
+ | _ \  / _ \  
+ |   / | (_) | 
+ |_|_\  \___/  
+               
+                                                                        -->
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">  
+
+<script>
+  // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+</head>
+<body>
+
+<div id="navbar">
+  <header class="header">  
+      <!--<img src="RoIcon.png"/>--><a class="navbar-logo" href="index.html#ro">RO</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><i class="fa fa-bars"></i></label>
+    <ul class="menu">
+      <li><a class="active" href="index.html">HOME</a></li>
+      <li><a href="index.html#connect">CONNECT</a></li>
+      <li><a href="index.html#about">ABOUT</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="mailto:contact@ro.network?Subject=Ro%20Network" target="_blank">CONTACT</a></li>
+      <li><a class="learn-more" href="index.html#download" target="_blank">DOWNLOAD</a></li>
+    </ul>
+  </header>
+</div>
+
+<section id="ro">
+  <div class="bgimg-1">
+    <div class="ro-title">
+      <div>Ro Network</div>
+      <div>Data Policy</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div style="position:relative;">
+    <div style="color:green;background-color:white;text-align:center;padding:50px 80px;text-align: center;">
+
+        <div class="caption faq-window">
+          <p class="faq-header">How we collect your data</p>
+          <p class="faq-spacer"></p>
+          
+          <p class="faq-subheader">We Do Not Store Your Contacts Info</p>
+          <p class="faq-answer">We do not store the contacts you share via the Ro app.  Those get added directly to the recipient phone's native Contacts list.</p>
+
+          <p class="faq-spacer"></p>
+          <p class="faq-subheader">We Do Not Sell Your Data To Anyone</p>
+          <p class="faq-answer">We don't even store anything that we conceivably could sell.</p>
+          <p class="faq-spacer"></p>
+          
+          <p class="faq-answer">In the future, if we are going to connect you to other companies, in any sort of relationship, you can be sure that it would be only with your full consent.</p>
+
+          <p class="faq-spacer"></p>
+          
+          <p class="faq-subheader">What Happens To Your Contacts If Ro Goes Away?</p>
+          <p class="faq-answer">The contacts that you've shared or received through Ro will not be affected if you delete the app, or if Ro goes away as a company, because they're just stored in your regular native phone Contacts list.</p>
+          <p class="faq-spacer"></p>
+
+
+          <p class="faq-subheader">What Statistics Do We Track?</p>
+          <ul class="faq-answer">Total number of app installs (on each mobile platform)</ul>
+          <ul class="faq-answer">Total number of times the app re-opens (beyond the first install)</ul>
+          <ul class="faq-answer">Total number of QR code scans</ul>
+          <ul class="faq-answer">Total number of app uninstalls</ul>
+          <p class="faq-spacer"></p>
+
+          <p class="faq-subheader">What we're hoping to track in the near future:</p>
+          <p class="faq-answer">Finer-grained app usage (the number of times each screen on the app gets viewed)
+          </p>
+
+          <p class="faq-spacer"></p>
+
+          
+          <p class="faq-subheader">Any Other Questions</p>
+          <p class="faq-answer">We know how important data privacy is to you.</p>
+
+          <p class="faq-answer footer-sub-link">Please do not hesitate to reach out: <a href="mailto:info@ro.network?Subject=Ro%20Network" target="_top">info@ro.network</a>
+          </p>
+
+
+        </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="bgimg-2">
+    <div class="get-app">
+      <p class="get-app-subheader">Get the app on Android and iOS:</p>
+      <div>
+        <span>
+          <a href="https://itunes.apple.com/app/id1403063239" target="_blank"><img class="badge apple-badge" src="apple_download.svg"/></a>
+        </span>
+        <span>
+          <a href="https://play.google.com/store/apps/details?id=com.roapp" target="_blank"><img class="badge" src="google-play-badge.png"/></a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+
+      <div class="footer-row">
+        <div class="col-md-4 footer-background" style="margin-top: 50px;">
+          <div class="footer-sub-header"><a class="active" href="index.html">HOME </a><a href="index.html#connect"> CONNECT </a><a href="index.html#faq"> FAQ </a>
+          </div>
+          <div class="footer-sub-link"><a href="privacy.html">Privacy Policy</a>
+          </div>
+          <div class="footer-sub-link"><a href="data.html">How we collect data</a>
+          </div>
+        </div>
+        <div class="col-md-4 footer-background" style="margin-top: 25px;">
+          <div class="footer-sub-header"><img class="footer-image" src="RoIconZoom.png"/></div>
+          <div class="footer-sub-header"><a href="index.html#download">Get the app</a></div>
+        </div>
+        <div class="col-md-4 footer-background" style="margin-top: 20px; padding-bottom: 40px;">
+          <div class="footer-sub-header">@2019 Ro Network</div>
+          <div class="footer-sub-header" style="margin-top: 15px;"><a href="mailto:contact@ro.network?Subject=Ro%20Network" target="_top">contact@ro.network</a></div>
+          <div class="social-media-row">
+            <span class="social-media">
+              <a href="https://www.facebook.com/RoAppNetwork/" target="_blank"><img class="social-media-icon" src="/images/facebook.png"/></a>
+            </span>
+            <span class="social-media">
+              <a href="https://twitter.com/ro_network" target="_blank"><img class="social-media-icon" src="/images/twitter.png"/></a>
+            </span>
+            <span class="social-media">
+              <a href="https://www.linkedin.com/company/ro-network/" target="_blank"><img class="social-media-icon" src="/images/linkedin.png"/></a>
+            </span>
+            <span class="social-media">
+              <a href="https://angel.co/ro-network" target="_blank"><img class="social-media-icon" src="/images/angellist_icon.png" style="max-width: 34px; margin-left: -5px;"/></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+  </footer>
+</body>
+</html>

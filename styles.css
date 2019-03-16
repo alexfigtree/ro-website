@@ -68,7 +68,7 @@ body, html {
   text-align: center;
   color: #000;
   padding-top: 15%;
-  font-size: 90px;
+  font-size: 115px;
 }
 
 .get-app {
@@ -141,7 +141,7 @@ h3 {
   font-size: 22px;
   /*font-family: "Montserrat", sans-serif;*/
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 35px;
   font-weight: 500;
 }
 
@@ -271,7 +271,7 @@ i.fa.fa-bars {
 }
 
 
-/* HOW section */
+/* CONNECT AND HOW section */
 .how {
   color: #777;
   /* text-align:center;*/
@@ -284,11 +284,50 @@ i.fa.fa-bars {
 .how-header {
   text-align:center; 
   margin-top: 60px;
-  margin-bottom: 75px; 
+  margin-bottom: 50px; 
   font-size: 30px; 
   letter-spacing: 2px;
+  line-height: 45px;
   color: black;
 }
+
+.red-header {
+  color: #e65425;
+  font-size: 35px !important;
+}
+
+/* How subsection*/
+#how {
+  height: 1800px;
+}
+.how-subsection {
+  height: 550px!important;
+}
+.how-to-screenshot {
+  border: black 2px solid;
+  width: 45% !important;
+}
+.screenshot-left{
+  margin-left: 12%;
+  float: left;
+}
+.text-left{
+  margin-left: 15%;
+}
+.screenshot-right{
+  margin-left: -10%;
+}
+.text-right{
+  text-align: left;
+}
+.how-subheader{
+  color: white !important;
+  font-size: 24px;
+  margin-top: 30px;
+  font-family: Verdana;
+  letter-spacing: 2px;
+}
+
 
 /* Page content */
 .content {
@@ -352,6 +391,13 @@ i.fa.fa-bars {
   padding-left: 15px;
 }
 
+.col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 @media (min-width: 992px) {
   .col-md-2 {
       width: 45%;
@@ -364,6 +410,17 @@ i.fa.fa-bars {
   .col-md-4 {
       width: 30%;
       float: left;
+  }
+  /*For About section*/
+  .col-md-6 {
+    width: 36%;
+    float: left;
+  }
+  .profile-left {
+    padding-left: 12%;
+  }
+  .profile-right {
+    padding-right: 12%;
   }
 }
 
@@ -385,11 +442,16 @@ i.fa.fa-bars {
 
 .edit-icon {
   max-width: 155px;
-  margin-top: 26px;
-  margin-left: 41%;
-  margin-bottom: 24px;
+  margin-top: 0px;
+  margin-left: 39%;
+  margin-bottom: 0px;
 }
-
+.other-icon {
+  max-width: 120px;
+  margin-top: 19px;
+  margin-left: 43%;
+  margin-bottom: 16px;
+}
 .sub-header {
   margin-top: 30px;
   font-size: 20px;
@@ -431,6 +493,39 @@ a.learn-more:hover{
 
 }
 
+/* Section - About */
+.profile-photo {
+  max-width: 150px;
+  border-radius: 100px;
+}
+
+.photo-sub-header {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Helvetica;
+  letter-spacing: 2px;
+  color: rgba(22,28,46,0.9);
+  text-align: center;
+}
+
+.about-text {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: black;
+  line-height: 25px;
+}
+
+.about-social-media {
+  margin: 1%;
+}
+.about-social-media-icon {
+  max-width: 25px;
+}
+.about-social-media-icon a:hover {
+  text-decoration: underline;
+  color: #e65425;
+}
+
 /*faq section*/
 .faq-window {
   display: block;
@@ -455,8 +550,8 @@ a.learn-more:hover{
 .faq-answer {
   color: black;
   font-size: 16px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
   letter-spacing: 1.5px;
 }
 
@@ -497,6 +592,16 @@ a.learn-more:hover{
 .footer-sub-header a:focus, .footer-sub-header a:hover {
   color: #e65425;
 }
+.footer-sub-link {
+  margin-top: 10px;
+}
+.footer-sub-link a{
+  color: #e65425;
+  text-decoration: none;
+}
+.footer-sub-link a:focus, .footer-sub-link a:hover {
+  color: black;
+}
 .copyright {
   color: grey;
   font-weight: 300;
@@ -520,7 +625,7 @@ a.learn-more:hover{
 div.footer-row{
   border-top: solid black 5px;
 }
-div.col-md-4.footer-background {
+div.col-md-4.footer-background, div.col-md-6.footer-background {
   background-color: white;
   border-color: white;
 }
@@ -553,6 +658,7 @@ div.col-md-4.footer-background {
     font-size: 50px;
     width: 90%;
     margin-left: 5%;
+    padding-top: 30%;
   }
   #navbar a.navbar-logo{
     color: white;
@@ -570,7 +676,7 @@ div.col-md-4.footer-background {
     color: white;
   }
   .header .menu-btn:checked ~ .menu {
-    max-height: 300px;
+    max-height: 360px;
     margin-left: 8%;
   }
   #navbar a.learn-more {
@@ -591,9 +697,15 @@ div.col-md-4.footer-background {
     height: 1200px;
   }
   .how-header {
-    font-size: 32px;
-    margin-top: 30px;
+    font-size: 24px;
+    margin-top: 40px;
     margin-bottom: 0px;
+    margin-left: -10%;
+    margin-right: -10%;
+    line-height: 35px;
+  }
+  .red-header {
+    font-size: 28px !important;
   }
   .app-img {
     margin-top: 60px;
@@ -602,8 +714,14 @@ div.col-md-4.footer-background {
   }
   .edit-icon {
     max-width: 90px;
-    margin-top: 30px;
-    padding-left: 5%;
+    margin-top: 10px;
+    padding-left: 0%;
+    margin-bottom: 0px;
+  }
+  .other-icon {
+    max-width: 68px;
+    margin-top: 40px;
+    padding-left: 6%;
     margin-bottom: 10px;
   }
   .sub-header {
@@ -633,5 +751,27 @@ div.col-md-4.footer-background {
     margin-left: 2%;
     margin-right: 2%;
     letter-spacing: 1.5px;
+  }
+  ul.faq-answer {
+    margin-left: -10%;
+  }
+
+  /*About*/
+  .col-md-6 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+  }
+  .about-text {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 14px !important;
+  }
+  .profile-left {
+    padding-left: 0%;
+  }
+  .profile-right {
+    padding-right: 0%;
   }
 }
