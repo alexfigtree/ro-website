@@ -559,6 +559,16 @@ a.learn-more:hover{
 .footer-sub-header a:focus, .footer-sub-header a:hover {
   color: #e65425;
 }
+.footer-sub-link {
+  margin-top: 10px;
+}
+.footer-sub-link a{
+  color: #e65425;
+  text-decoration: none;
+}
+.footer-sub-link a:focus, .footer-sub-link a:hover {
+  color: black;
+}
 .copyright {
   color: grey;
   font-weight: 300;
