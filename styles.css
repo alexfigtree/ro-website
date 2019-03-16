@@ -277,7 +277,7 @@ i.fa.fa-bars {
   /* text-align:center;*/
   padding:50px 80px;
   /* text-align: justify; */
-  height: 625px;
+  height: 1225px;
   border-top: solid black 5px;
 }
 
@@ -403,9 +403,16 @@ i.fa.fa-bars {
 
 .edit-icon {
   max-width: 155px;
-  margin-top: 26px;
+  margin-top: 0px;
   margin-left: 41%;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
+}
+
+.other-icon {
+  max-width: 120px;
+  margin-top: 19px;
+  margin-left: 41%;
+  margin-bottom: 16px;
 }
 
 .sub-header {
@@ -654,8 +661,14 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
   }
   .edit-icon {
     max-width: 90px;
-    margin-top: 30px;
+    margin-top: 10px;
     padding-left: 5%;
+    margin-bottom: 0px;
+  }
+  .other-icon {
+    max-width: 68px;
+    margin-top: 40px;
+    padding-left: 10%;
     margin-bottom: 10px;
   }
   .sub-header {
