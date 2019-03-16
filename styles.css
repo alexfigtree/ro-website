@@ -271,13 +271,13 @@ i.fa.fa-bars {
 }
 
 
-/* HOW section */
+/* CONNECT AND HOW section */
 .how {
   color: #777;
   /* text-align:center;*/
   padding:50px 80px;
   /* text-align: justify; */
-  height: 1225px;
+  height: 625px;
   border-top: solid black 5px;
 }
 
@@ -295,6 +295,39 @@ i.fa.fa-bars {
   color: #e65425;
   font-size: 35px !important;
 }
+
+/* How subsection*/
+#how {
+  height: 1800px;
+}
+.how-subsection {
+  height: 550px!important;
+}
+.how-to-screenshot {
+  border: black 2px solid;
+  width: 45% !important;
+}
+.screenshot-left{
+  margin-left: 12%;
+  float: left;
+}
+.text-left{
+  margin-left: 15%;
+}
+.screenshot-right{
+  margin-left: -10%;
+}
+.text-right{
+  text-align: left;
+}
+.how-subheader{
+  color: white !important;
+  font-size: 24px;
+  margin-top: 30px;
+  font-family: Verdana;
+  letter-spacing: 2px;
+}
+
 
 /* Page content */
 .content {
