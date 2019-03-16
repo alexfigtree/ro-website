@@ -719,6 +719,10 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
     margin-right: 2%;
     letter-spacing: 1.5px;
   }
+  ul.faq-answer {
+    margin-left: -10%;
+  }
+
   /*About*/
   .col-md-6 {
     width: 100%;
