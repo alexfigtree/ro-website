@@ -659,6 +659,11 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
 }
 
 @media (max-width: 992px) {
+  /*
+  body{
+    width: 102%;
+  }
+  */
   #ro {
     padding-top: 100px;
   }
@@ -848,5 +853,12 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
     -ms-flex-order: 1;
     -webkit-order: 1;
     order: 1;
+  }
+}
+
+@media (max-width: 350px) {
+  .sub-header.button {
+    width: 157px;
+    margin-left: -1%;
   }
 }
