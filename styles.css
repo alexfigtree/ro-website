@@ -645,7 +645,7 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
 }
 .social-media-row {
   margin-top: 20px;
-  margin-left: 0px;
+  margin-left: -2px;
 }
 .social-media {
   margin: 3%;
