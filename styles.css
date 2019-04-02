@@ -854,6 +854,13 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
     -webkit-order: 1;
     order: 1;
   }
+
+  /* Mailchimp responsive: */
+  #mc_embed_signup input.email,
+  input#mce-EMAIL.email,
+  #mc_embed_signup .button {
+    width: 80% !important;
+  }
 }
 
 @media (max-width: 350px) {
@@ -868,6 +875,7 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
 #mc_embed_signup input.email {
   border: 3px solid black !important;
   height: 38px !important;
+  width: 100%;
 }
 
 #mc_embed_signup .button {
@@ -876,6 +884,7 @@ div.col-md-4.footer-background, div.col-md-6.footer-background {
   background-color: black !important;
   height: 38px !important;
   font-family: Verdana !important;
+  width: 100%;
 }
 
 #mc_embed_signup .button:hover {
