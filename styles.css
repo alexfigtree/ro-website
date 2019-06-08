@@ -15,6 +15,8 @@ body, html {
   font: 400 15px/1.8, sans-serif;
   color: #777;
   letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
 }
 
 .qr-container {
@@ -23,11 +25,6 @@ body, html {
   align-content: center;
   text-align:center; 
   font-family: Verdana;
-}
-
-.qr-form-container {
-  align-items: center;
-  align-content: center;
 }
 
 .qr-header {
@@ -39,12 +36,41 @@ body, html {
   letter-spacing: 1px;
 }
 
+.qr-form-container {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+.flex-spacer {
+  display: flex;
+  height: 450px;
+  width: 650px;
+  padding: 5px;
+  margin: 0 5px;
+  background: #e65425;
+}
+
+.row-flex {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
 .starter-text-input {
   border-width: 2px;
   border-color: black;
   border-radius: 50px;
   color: black;
-  width: 30%;
+  width: 380px;
   height: 20px;
   padding: 10px;
   margin-bottom: 15px;
@@ -86,6 +112,8 @@ body, html {
   border-color: black !important;
   color: black;
 }
+
+
 
 .count-particles {
   background: #000022;

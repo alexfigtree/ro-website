@@ -21,6 +21,7 @@
 function submitform()
 {
     document.forms["qrform"].submit();
+    console.log('you just did a thing.');
 
 }
 </script>
@@ -32,19 +33,38 @@ function submitform()
 	<div class="qr-header">Generate your own custom QR code by filling out the following:</div>
 	<div class="qr-form-container">
 		<form id="qrform" action="/save.js">
-		  <div><span class="input-field">First name:</span> <input type="text" name="fname" class="starter-text-input">
-		  </div><br>
-		  <span class="input-field">Last name:</span> <input type="text" name="lname" class="starter-text-input"><br>
-		  <span class="input-field">Email Address:</span> <input type="text" name="email" class="starter-text-input"><br>
-		  <span class="input-field">Phone Number:</span> <input type="text" name="phonenumber" class="starter-text-input"><br>
-		  <span class="input-field">Job Title:</span> <input type="text" name="jobtitle" class="starter-text-input"><br>
-		  <span class="input-field">Website:</span> <input type="text" name="website" class="starter-text-input"><br>
-		  <input type="submit" value="Submit" class="button-submit-text">
-		  <div class="button-submit-text"><a class="button-submit-text" href="javascript: submitform()">Submit</a></div>
+	 
+			<div class="flex-spacer column justify-space-between">
+			  <div class="row-flex justify-space-between">
+			    <div class=""><span class="form-item input-field">First name:</span></div>
+			    <div class=""><input type="text" name="fname" class="form-item starter-text-input"></div>
+			  </div>
+			  <div class="row-flex justify-space-between">
+			    <div class=""><span class="form-item input-field">Last name:</span></div>
+			    <div class=""><input type="text" name="lname" class="form-item starter-text-input"></div>
+			  </div>
+			  <div class="row-flex justify-space-between">
+			    <div class=""><span class="form-item input-field">Email Address:</span></div>
+			    <div class=""><input type="text" name="email" class="form-item starter-text-input"></div>
+			  </div>
+			  <div class="row-flex justify-space-between">
+			    <div class=""><span class="form-item input-field">Phone Number:</span></div>
+			    <div class=""><input type="text" name="phonenumber" class="form-item starter-text-input"></div>
+			  </div>
+			  <div class="row-flex justify-space-between">
+			    <div class=""><span class="form-item input-field">Job Title:</span></div>
+			    <div class=""><input type="text" name="jobtitle" class="form-item starter-text-input"></div>
+			  </div>
+			  <div class="row-flex justify-space-between">
+			    <div class=""><span class="form-item input-field">Website:</span></div>
+			    <div class=""><input type="text" name="website" class="form-item starter-text-input"></div>
+			  </div>
+			</div>
+
+			<input type="submit" value="Submit" class="button-submit-text">
+			<div class="button-submit-text"><a class="button-submit-text" href="javascript: submitform()">Submit</a></div>
 		</form>
 	</div>
-
-
 
 
 </body>
