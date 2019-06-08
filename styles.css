@@ -23,6 +23,7 @@ body, html {
   background: #e65425;
   align-items: center;
   align-content: center;
+  justify-content: center;
   text-align:center; 
   font-family: Verdana;
 }
@@ -83,29 +84,22 @@ body, html {
   font-weight: 300;
 }
 
-.button-container {
-  flex: 1;
-  margin-top: 10;
-  flex-direction: 'row';
-  margin-bottom: 20;
-}
-
 .button-submit-text {
+  background-color: #e65425;
   border-radius: 5px;
   border-width: 5px;
   border-color: white !important;
   color: white;
-  height: 60px;
-  padding-bottom: 40px !important;
-  width: 180px;
-  letter-spacing: 3;
-  background-color: #e65425;
-  text-align: center;
-  padding: 14px;
-  font-size: 22px;
-  text-decoration: none;
   font-weight: 500;
-  margin-top: 0px; 
+  font-size: 22px;
+  height: 60px;
+  letter-spacing: 3;
+  margin-top: 30px;
+  padding: 14px;
+  padding-bottom: 40px !important;
+  text-align: center;
+  text-decoration: none;
+  width: 180px; 
 }
 
 .button-submit-text:hover {
@@ -113,7 +107,24 @@ body, html {
   color: black;
 }
 
+.generated-qr-container{
+  height: 400px;
+}
 
+#qrText {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+#qrcode {
+  margin-left: 40%;
+  width:160px;
+  height:160px;
+  margin-top:15px;
+  margin-bottom: 300px;
+}
 
 .count-particles {
   background: #000022;
