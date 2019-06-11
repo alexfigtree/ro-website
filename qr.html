@@ -21,6 +21,7 @@
 <script type="text/javascript">
 	function submitForm()
 	{
+
 	    //document.forms["qrform"].submit();
 	    console.log('you just did a thing.');
 	    let fname = document.getElementById("fname").value;
@@ -40,6 +41,13 @@
 		
 		document.getElementById("qrText").innerHTML = "Here's your generated QR code:";
 		
+		let qrInfo = {
+			firstName: fname,
+			lastName: lname
+		};
+
+		document.getElementById("qrTest").innerHTML = qrInfo;
+
 		let qrcode = new QRCode("qrcode");
 
 		function makeCode () {		
@@ -100,6 +108,8 @@
 	<div><input type="submit" value="Submit" class="button-submit-text" onClick="submitForm()"></div>
 	<div id="qrText"></div>
 	<div id="qrcode"></div>
+
+	<div id="qrTest"></div>
 
 	
 </body>
