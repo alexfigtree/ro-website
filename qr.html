@@ -19,11 +19,13 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon"> 
 <script src="js/lib/qrcode.js"></script>
 <script type="text/javascript">
-	function submitForm()
-	{
 
+	function submitForm()
+	{	
+		//fix multiple QR code issue:
+		document.getElementById('qrcode').innerHTML = '';
 	    //document.forms["qrform"].submit();
-	    console.log('you just did a thing.');
+	    
 	    let fname = document.getElementById("fname").value;
 	    let lname = document.getElementById("lname").value;
 	    console.log('fname: ', fname);
@@ -46,27 +48,16 @@
 			lastName: lname
 		};
 
-		document.getElementById("qrTest").innerHTML = qrInfo;
+		let qrcode = new QRCode("qrcode"); 
 
-		let qrcode = new QRCode("qrcode");
-
-		function makeCode () {		
+		function generateCode () {				
 			var elText = document.getElementById("website");
-			
-			if (!elText.value) {
-				//alert("Input a text");
-				elText.focus();
-				//return;
-			}
-			
+
 			qrcode.makeCode(elText.value);
 		}
 
-		makeCode();
-
+		generateCode();
 	}
-
-	//new QRCode(document.getElementById("qr"), "http://jindo.dev.naver.com/collie");
 
 </script>
 </head>
@@ -104,13 +95,11 @@
 		</div>
 
 	</div>
-	
+
 	<div><input type="submit" value="Submit" class="button-submit-text" onClick="submitForm()"></div>
 	<div id="qrText"></div>
 	<div id="qrcode"></div>
-
 	<div id="qrTest"></div>
 
-	
 </body>
 </html>
