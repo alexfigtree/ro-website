@@ -15,9 +15,127 @@ body, html {
   font: 400 15px/1.8, sans-serif;
   color: #777;
   letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
 }
 
-.count-particles{
+.qr-container {
+  background: #e65425;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align:center; 
+  font-family: Verdana;
+}
+
+.qr-page-logo {
+  width: 50px;
+  margin-left: 30px;
+  float: left;
+  margin-top: -60px;
+  border: 2px solid white;
+}
+
+.qr-header {
+  color: white !important;
+  font-size: 24px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  font-family: Verdana;
+  letter-spacing: 1px;
+}
+
+.qr-form-container {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+.flex-spacer {
+  display: flex;
+  height: 450px;
+  width: 650px;
+  padding: 5px;
+  margin: 0 5px;
+  background: #e65425;
+}
+
+.row-flex {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.starter-text-input {
+  border-width: 2px;
+  border-color: black;
+  border-radius: 50px;
+  color: black;
+  width: 380px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.input-field {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.button-submit-text {
+  background-color: #e65425;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: white !important;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  height: 60px;
+  letter-spacing: 3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 14px;
+  padding-bottom: 40px !important;
+  text-align: center;
+  text-decoration: none;
+  width: 180px; 
+}
+
+.button-submit-text:hover {
+  border-color: black !important;
+  color: black;
+}
+
+.generated-qr-container{
+  height: 400px;
+}
+
+#qrText {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+#qrcode {
+  margin-left: 40%;
+  width:160px;
+  height:160px;
+  margin-top:15px;
+  margin-bottom: 300px;
+}
+
+.count-particles {
   background: #000022;
   position: absolute;
   top: 48px;
